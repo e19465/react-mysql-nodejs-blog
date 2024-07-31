@@ -28,8 +28,7 @@ app.use(express.static(path.join(__dirname, "static")));
 //! middleware for cookies
 app.use(cookieParser());
 
-//! Function to connect to MongoDB with retries
-// Function to connect to MySQL and initialize the database
+//! Function to connect to MySQL and initialize the database
 function connectToDatabase() {
   connection.connect((err) => {
     if (err) {
